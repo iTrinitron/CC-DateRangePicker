@@ -100,11 +100,11 @@ Default: ``
 
 Maximum end Date
 
-~~#### max-end-date-offset
+#### max-end-date-offset
 Type: `Integer`  
 Default: ``
 
-NOT USED ANYMORE
+##### NOT USED ANYMORE
 
 #### max-end-date-from-today
 Type: `Integer`  
