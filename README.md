@@ -122,8 +122,8 @@ Number of seconds that the calendar remains open after an end-date selection
 
 ####Further optimization
 
-1. ~~Swap $watch on the input for an ng-change~~ (swapped out a few)
-2. Change startCal toggle on/off to not update (causing an entire calendar wipe and rebuild), and instead add/remove the disabled class
+1. ~~Swap $watch on the input for an ng-change~~ (swapped out a few)~~
+2. ~~Change startCal toggle on/off to not update (causing an entire calendar wipe and rebuild), and instead add/remove the disabled class~~
 
 ####Todo
 
