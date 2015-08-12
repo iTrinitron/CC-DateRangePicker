@@ -112,7 +112,7 @@ Default: ``
 
 Maximum end date relative to today's date
 
-## close-delay
+#### close-delay
 Type: `Integer`
 Default: 1000
 
