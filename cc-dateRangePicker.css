@@ -1,0 +1,807 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.date-picker-date-time {
+  position: absolute;
+}
+[date-picker-wrapper] {
+  position: absolute;
+  min-width: 220px;
+  z-index: 10;
+  display: block;
+  font-size: 14px;
+}
+[date-time-append] [date-picker-wrapper] [date-picker] {
+  margin-top: -30px;
+}
+[date-time-append] [date-picker] {
+  position: relative;
+  margin-right: -1000px;
+  margin-bottom: -1000px;
+}
+[date-range] [date-picker] .after.before {
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #499dcd;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f6ab4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f6ab4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f6ab4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f6ab4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f6ab4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f6ab4', GradientType=0);
+  border-color: #2f6ab4 #2f6ab4 #1f4677;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #2f6ab4;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+[date-range] [date-picker] .after.before:hover,
+[date-range] [date-picker] .after.before:active,
+[date-range] [date-picker] .after.before.active,
+[date-range] [date-picker] .after.before.disabled,
+[date-range] [date-picker] .after.before[disabled] {
+  color: #ffffff;
+  background-color: #2f6ab4;
+  *background-color: #2a5ea0;
+}
+[date-range] [date-picker] .after.before:active,
+[date-range] [date-picker] .after.before.active {
+  background-color: #24528c \9;
+}
+[date-range] [date-picker] .after.before:hover,
+[date-range] [date-picker] .after.before:active,
+[date-range] [date-picker] .after.before.active,
+[date-range] [date-picker] .after.before.disabled,
+[date-range] [date-picker] .after.before[disabled] {
+  color: #ffffff;
+  background-color: #2f6ab4;
+  *background-color: #2a5ea0;
+}
+[date-range] [date-picker] .after.before:active,
+[date-range] [date-picker] .after.before.active {
+  background-color: #24528c \9;
+}
+[date-picker] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+  /* GENERAL */
+  padding: 4px;
+  /* SPECIFIC */
+}
+[date-picker].hidden {
+  display: none;
+}
+[date-picker] table {
+  margin: 0;
+}
+[date-picker] td,
+[date-picker] th {
+  padding: 4px 5px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+}
+[date-picker] .switch {
+  width: 145px;
+}
+[date-picker] span {
+  display: block;
+  width: 23%;
+  height: 26px;
+  line-height: 25px;
+  float: left;
+  margin: 1%;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+[date-picker] span:hover {
+  background: #eeeeee;
+}
+[date-picker] span.disabled,
+[date-picker] span.disabled:hover {
+  background: none;
+  color: #999999;
+  cursor: default;
+}
+[date-picker] .active,
+[date-picker] .now {
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  color: #ffffff;
+  background-color: #006dcc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #0044cc;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+[date-picker] .active:hover,
+[date-picker] .now:hover,
+[date-picker] .active:active,
+[date-picker] .now:active,
+[date-picker] .active.active,
+[date-picker] .now.active,
+[date-picker] .active.disabled,
+[date-picker] .now.disabled,
+[date-picker] .active[disabled],
+[date-picker] .now[disabled] {
+  color: #ffffff;
+  background-color: #0044cc;
+  *background-color: #003bb3;
+}
+[date-picker] .active:active,
+[date-picker] .now:active,
+[date-picker] .active.active,
+[date-picker] .now.active {
+  background-color: #003399 \9;
+}
+[date-picker] .active:hover,
+[date-picker] .now:hover,
+[date-picker] .active:active,
+[date-picker] .now:active,
+[date-picker] .active.active,
+[date-picker] .now.active,
+[date-picker] .active.disabled,
+[date-picker] .now.disabled,
+[date-picker] .active[disabled],
+[date-picker] .now[disabled] {
+  color: #ffffff;
+  background-color: #0044cc;
+  *background-color: #003bb3;
+}
+[date-picker] .active:active,
+[date-picker] .now:active,
+[date-picker] .active.active,
+[date-picker] .now.active {
+  background-color: #003399 \9;
+}
+[date-picker] .now {
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #ee735b;
+  background-image: -moz-linear-gradient(top, #ee5f5b, #ee905b);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#ee905b));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #ee905b);
+  background-image: -o-linear-gradient(top, #ee5f5b, #ee905b);
+  background-image: linear-gradient(to bottom, #ee5f5b, #ee905b);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffee905b', GradientType=0);
+  border-color: #ee905b #ee905b #e56218;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #ee905b;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+[date-picker] .now:hover,
+[date-picker] .now:active,
+[date-picker] .now.active,
+[date-picker] .now.disabled,
+[date-picker] .now[disabled] {
+  color: #ffffff;
+  background-color: #ee905b;
+  *background-color: #ec8044;
+}
+[date-picker] .now:active,
+[date-picker] .now.active {
+  background-color: #e9712d \9;
+}
+[date-picker] .now:hover,
+[date-picker] .now:active,
+[date-picker] .now.active,
+[date-picker] .now.disabled,
+[date-picker] .now[disabled] {
+  color: #ffffff;
+  background-color: #ee905b;
+  *background-color: #ec8044;
+}
+[date-picker] .now:active,
+[date-picker] .now.active {
+  background-color: #e9712d \9;
+}
+[date-picker] .disabled {
+  background: none;
+  color: #999999 !important;
+  cursor: default;
+}
+[date-picker] [ng-switch-when="year"] span,
+[date-picker] [ng-switch-when="month"] span,
+[date-picker] [ng-switch-when="minutes"] span {
+  height: 54px;
+  line-height: 54px;
+}
+[date-picker] [ng-switch-when="date"] td {
+  padding: 0;
+}
+[date-picker] [ng-switch-when="date"] span {
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+}
+[date-picker] th:hover,
+[date-picker] [ng-switch-when="date"] td span:hover {
+  background: #eeeeee;
+  cursor: pointer;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.date-picker-date-time {
+  position: absolute;
+}
+[date-picker-wrapper] {
+  position: absolute;
+  min-width: 220px;
+  z-index: 10;
+  display: block;
+  font-size: 14px;
+}
+[date-time-append] [date-picker-wrapper] [date-picker] {
+  margin-top: -30px;
+}
+[date-time-append] [date-picker] {
+  position: relative;
+  margin-right: -1000px;
+  margin-bottom: -1000px;
+}
+[date-range] [date-picker] .after.before {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #499dcd;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f6ab4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f6ab4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f6ab4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f6ab4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f6ab4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f6ab4', GradientType=0);
+  border-color: #2f6ab4 #2f6ab4 #1f4677;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #2f6ab4;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+[date-range] [date-picker] .after.before:hover,
+[date-range] [date-picker] .after.before:active,
+[date-range] [date-picker] .after.before.active,
+[date-range] [date-picker] .after.before.disabled,
+[date-range] [date-picker] .after.before[disabled] {
+  color: #ffffff;
+  background-color: #2f6ab4;
+  *background-color: #2a5ea0;
+}
+[date-range] [date-picker] .after.before:active,
+[date-range] [date-picker] .after.before.active {
+  background-color: #24528c \9;
+}
+[date-picker].hidden {
+  display: none;
+}
+[date-picker] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+  /* GENERAL */
+  padding: 4px;
+  /* SPECIFIC */
+}
+[date-picker] table {
+  margin: 0;
+}
+[dropdown] .dropdown-menu.mobile [date-picker] table {
+  margin: 0 auto;
+}
+[date-picker] td,
+[date-picker] th {
+  padding: 4px 5px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+}
+[date-picker] .switch {
+  width: 145px;
+}
+[date-picker] span {
+  display: block;
+  width: 23%;
+  height: 26px;
+  line-height: 25px;
+  float: left;
+  margin: 1%;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+[date-picker] span:hover {
+  background: #eeeeee;
+}
+[date-picker] span.disabled,
+[date-picker] span.disabled:hover {
+  background: none;
+  color: #999999;
+  cursor: default;
+}
+[date-picker] .active,
+[date-picker] .now {
+  color: #ffffff;
+  background-color: #006dcc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #0044cc;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+[date-picker] .active:hover,
+[date-picker] .now:hover,
+[date-picker] .active:active,
+[date-picker] .now:active,
+[date-picker] .active.active,
+[date-picker] .now.active,
+[date-picker] .active.disabled,
+[date-picker] .now.disabled,
+[date-picker] .active[disabled],
+[date-picker] .now[disabled] {
+  color: #ffffff;
+  background-color: #0044cc;
+  *background-color: #003bb3;
+}
+[date-picker] .active:active,
+[date-picker] .now:active,
+[date-picker] .active.active,
+[date-picker] .now.active {
+  background-color: #003399 \9;
+}
+[date-picker] .now {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #ee735b;
+  background-image: -moz-linear-gradient(top, #ee5f5b, #ee905b);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#ee905b));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #ee905b);
+  background-image: -o-linear-gradient(top, #ee5f5b, #ee905b);
+  background-image: linear-gradient(to bottom, #ee5f5b, #ee905b);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffee905b', GradientType=0);
+  border-color: #ee905b #ee905b #e56218;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #ee905b;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+[date-picker] .now:hover,
+[date-picker] .now:active,
+[date-picker] .now.active,
+[date-picker] .now.disabled,
+[date-picker] .now[disabled] {
+  color: #ffffff;
+  background-color: #ee905b;
+  *background-color: #ec8044;
+}
+[date-picker] .now:active,
+[date-picker] .now.active {
+  background-color: #e9712d \9;
+}
+[date-picker] .disabled {
+  background: none;
+  color: #999999 !important;
+  cursor: default;
+}
+[date-picker] [ng-switch-when="year"] span,
+[date-picker] [ng-switch-when="month"] span,
+[date-picker] [ng-switch-when="minutes"] span {
+  height: 54px;
+  line-height: 54px;
+}
+[date-picker] [ng-switch-when="date"] td {
+  padding: 0;
+}
+[date-picker] [ng-switch-when="date"] span {
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+}
+[date-picker] th:hover,
+[date-picker] [ng-switch-when="date"] td span:hover {
+  background: #eeeeee;
+  cursor: pointer;
+}
+/*
+ * Date Range App Stylesheet
+ *
+ * Stylesheet for the datePicker directive.  Many of these classes override the
+ * base library stylesheets
+ *
+ * date: 6/23/2015
+ * @author Michael C
+ */
+/*
+ * The container holding the dateRangeApp
+ */
+/*
+ * Move the application away from the sides for demo purposes
+ *
+ * @REMOVE ON LIVE DEPLOYMENT
+ */
+[dropdown] .dropdown-menu {
+  margin-top: 10px;
+  box-shadow: none;
+  border-radius: 0px;
+  left: 50%;
+  margin-left: -296px;
+}
+[dropdown] [ng-switch-when=doubleDate] {
+  padding: 0;
+}
+[dropdown] [ng-switch-when=doubleDate] .cell {
+  display: table-cell;
+  width: 50%;
+}
+[dropdown] [ng-switch-when=doubleDate] .cell.left {
+  padding-right: 11px;
+}
+[dropdown] [ng-switch-when=doubleDate] .cell.right {
+  padding-left: 11px;
+}
+[dropdown] [ng-switch-when=doubleDate] .cell *:focus {
+  border: 0;
+}
+[dropdown] .dropdown-menu.mobile {
+  left: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  position: relative;
+  float: none;
+}
+[dropdown] .dropdown-menu .triangle-left {
+  left: 26px;
+}
+[dropdown] .dropdown-menu .triangle-right {
+  left: 340px;
+}
+[dropdown] .dropdown-menu.mobile .triangle-left {
+  left: 0px;
+}
+[dropdown] .dropdown-menu.mobile .triangle-right {
+  left: 75%;
+}
+[dropdown] .dropdown-menu.mobile [date-range] {
+  width: auto;
+  height: auto;
+}
+[date-range] {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  width: 590px;
+  height: 316px;
+  /* Sub-header of each datePicker container -- ex. days of the week "S M T.." */
+}
+[date-range].mobile {
+  width: auto;
+  height: auto;
+}
+[date-range] .dateRangeContainer {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+[date-range] [date-picker] {
+  margin-top: 8px;
+  float: left;
+}
+[dropdown] .dropdown-menu.mobile [date-picker] {
+  float: none;
+}
+[date-range] [date-picker] span {
+  height: 33px;
+  width: 33px;
+  line-height: 33px;
+}
+[date-range] [date-picker] .switch {
+  font-weight: normal;
+  text-transform: uppercase;
+  width: auto;
+  text-align: center;
+  border-bottom: 1px solid #999999;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+}
+[date-range] [date-picker] .active.after.before,
+[date-range] [date-picker] .after.before,
+[date-range] [date-picker] .active.after,
+[date-range] [date-picker] .active.active {
+  color: #FFF;
+  background-color: #6dd2d9;
+  background-image: none;
+  /* The original datePicker uses a linear gradient image  */
+}
+[date-range] [date-picker] .active.after.before:hover,
+[date-range] [date-picker] .after.before:hover,
+[date-range] [date-picker] .active.after:hover,
+[date-range] [date-picker] .active.active:hover {
+  background-color: #00c0cd;
+}
+[date-range] [date-picker] .startDay.active::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-left: 20px;
+  border-top: 16px solid #6dd2d9;
+  border-bottom: 16px solid #6dd2d9;
+  border-left: 6px solid #00c0cd;
+  -moz-transform: scale(0.9999);
+}
+[date-range] [date-picker] .endDay.active::before {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  margin-left: -12px;
+  border-top: 16px solid #6dd2d9;
+  border-bottom: 16px solid #6dd2d9;
+  border-right: 6px solid #00c0cd;
+  -moz-transform: scale(0.9999);
+}
+[date-range] [date-picker] .startDay.active.after {
+  background-color: #00c0cd;
+}
+[date-range] [date-picker] .endDay.active.before {
+  background-color: #00c0cd;
+}
+[date-range] [date-picker] .day {
+  color: #00c0cd;
+}
+[date-range] [date-picker] .disabled {
+  color: #cccccc;
+}
+[date-range] [date-picker] .disabled:hover {
+  background: inherit;
+  cursor: default;
+}
+[date-range] [date-picker] .after.before.disabled {
+  background-color: inherit;
+}
+[date-range] .right {
+  float: right;
+}
+[date-range] .arrow {
+  position: relative;
+  cursor: pointer;
+  color: #00c0cd;
+  font-size: 36px;
+  top: -4px;
+}
+[date-range] .leftArrow {
+  left: 30px;
+  float: left;
+}
+[date-range] .rightArrow {
+  right: 30px;
+  float: right;
+}
+[date-range] .disabledArrow {
+  color: rgba(0, 192, 205, 0.5);
+  cursor: default;
+}
+[date-range] .dayOfWeekBox {
+  color: #666666;
+  border-top: 1px solid gray;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+[date-range] th {
+  font-weight: normal;
+}
+[date-range] td {
+  height: 33px;
+  width: 33px;
+}
+[date-range] span {
+  border-radius: 0px;
+  height: 33px;
+  line-height: 33px;
+}
+[date-range] th:hover {
+  background: inherit;
+  cursor: default;
+}
+[date-picker-app] .dropdown-toggle {
+  border-radius: 0px;
+}
+[date-picker-app] .dropdown-toggle:focus {
+  box-shadow: none;
+  border: 1px solid #ccc;
+  transition-timing-function: linear;
+}
+[date-picker-app] .tri-up {
+  z-index: 3;
+  position: relative;
+  top: -6px;
+  left: 25px;
+}
+[date-picker-app] .tri-up:before,
+[date-picker-app] .tri-up:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-top: 0;
+}
+[date-picker-app] .tri-up:before {
+  bottom: -1px;
+  left: 21px;
+  /* If 1px darken stroke slightly */
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-width: 19px;
+}
+[date-picker-app] .tri-up:after {
+  bottom: -1px;
+  left: 22px;
+  border-bottom-color: white;
+  border-width: 18px;
+}
+[date-picker-app] .triangle-left {
+  left: 134px;
+}
+[date-picker-app] .triangle-right {
+  left: 262px;
+}
+[date-picker-app] .input-wrapper * {
+  border: 0;
+}
+[date-picker-app][view-mode=singleDate] .triangle-left {
+  left: 205px;
+}
+[date-picker-app][view-mode=singleDate] .triangle-right {
+  left: 335px;
+}
+[date-picker-app] .input-wrapper {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.unstyled::-webkit-inner-spin-button,
+.unstyled::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.inline {
+  display: inline-block;
+  text-align: center;
+  float: left;
+}
+.inline.center {
+  float: left;
+  width: 10%;
+  vertical-align: middle;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.inline.left {
+  border-right-width: 0!important;
+  width: 44% !important;
+}
+.inline.right {
+  border-left-width: 0!important;
+  width: 44% !important;
+}

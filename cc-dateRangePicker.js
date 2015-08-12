@@ -22,7 +22,7 @@
 var Module = angular.module('datePicker', []);
 
 Module.constant('datePickerConfig', {
-  template: '/etc/designs/site/cc/js/common/angular-dateRangePicker/templates/datepicker.html',
+  template: 'templates/datepicker.html',
   view: 'month',
   views: ['year', 'month', 'date', 'hours', 'minutes'],
   step: 5
@@ -559,7 +559,7 @@ angular.module('datePicker').factory('datePickerUtils', function(){
 Module.directive('dateRange', function () {
     return {
         require: '^datePickerApp',
-        templateUrl: '/etc/designs/site/cc/js/common/angular-dateRangePicker/templates/daterange.html',
+        templateUrl: 'templates/daterange.html',
         scope: {
             start: '=',
             end: '=',
@@ -720,7 +720,7 @@ Module.directive('dateInput', function() {
  */
 Module.directive('datePickerApp', ['$timeout','$window', function($timeout, $window) {
   return {
-    templateUrl: '/etc/designs/site/cc/js/common/angular-dateRangePicker/templates/datepickerapp.html',
+    templateUrl: 'templates/datepickerapp.html',
     scope: {
         formStartDate: '=fromDate', //Raw values passed to the form
         formEndDate: '=toDate',
