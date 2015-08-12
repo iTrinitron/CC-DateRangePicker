@@ -1,6 +1,8 @@
 # CC-DateRangePicker
 Extension of [g00fy's Angular Datepicker](https://github.com/g00fy-/angular-datepicker)
 
+Author: Michael Chin
+
 ##Requirements
 - Angular v1.3.13+
 - UI Bootstrap v0.13.0+
@@ -104,7 +106,7 @@ Maximum end Date
 Type: `Integer`  
 Default: ``
 
-##### NOT USED ANYMORE
+###### NOT USED ANYMORE
 
 #### max-end-date-from-today
 Type: `Integer`  
