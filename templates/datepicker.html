@@ -1,0 +1,21 @@
+<div ng-switch="view">
+  <div ng-switch-when="date"> 
+    <div class="switch month" ng-click="setView('month')" ng-bind="(dateIsSameYear(date) ? (date| date:'MMMM') : (date|date:'MMMM yyyy'))"></div>
+    <table>
+      <thead>
+      <tr>
+        <th ng-repeat="day in weekdays" style="overflow: hidden" ng-bind="(day|date:'EEE')[0]"></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="week in weeks">
+        <td ng-repeat="day in week">
+          <span ng-class="{'day':true, 'now':isNow(day) && false,'active':isSameDay(day) && !isDisabled(day, date),'disabled':isDisabled(day, date),'after':isAfter(day),'before':isBefore(day), 'startDay':isStartDay(day) && !isDisabled(day, date), 'endDay':isEndDay(day) && !isDisabled(day, date)}"
+                ng-click="setDate(day, date, $event)" ng-bind="day.getDate()">
+          </span>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
