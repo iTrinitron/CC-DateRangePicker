@@ -13,22 +13,18 @@
   <link rel="stylesheet" href="cc-daterangepicker.css"/>
 </head>
 <body ng-app="sample">
-  <div class="row-fluid">
-    <div class="span6" ng-controller="cntrler">
+  <div class="row-fluid" style="width: 1000px;">
       <h2>Calendar</h2>
-      {{formData}}
       <!-- MMM DD YYYY -->
-      <div date-picker-app 
-           date-output-format="MMM DD YYYY" 
-           start-placeholder-text="MMM DD YYYY" 
-           end-placeholder-text="MMM DD YYYY"
-           max-end-date-offset="30"
-           view-mode="singleDate"
-           data-from-date="formData.fromDate" 
-           data-to-date="formData.toDate">
-      </div>  
-    </span>
-    </div>
+      <div date-picker-app
+            date-output-format="dddd, MMM D, YYYY"
+            start-placeholder-text="From Date"
+            end-placeholder-text="To Date"
+            max-end-date-offset="30"
+            data-from-date="formData.fromDate"
+            data-to-date="formData.toDate"
+            view-mode="doubleDate"
+            max-end-date-from-today="330"></div> 
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.js"></script>
@@ -37,16 +33,8 @@
 
   <script src="cc-daterangepicker.js"></script>
   <script>
-  angular.module('sample', ['datePicker', 'ui.bootstrap'])
-            .controller('cntrler',['$http','$scope','$timeout','$window', function($http,$scope,$timeout,$window) {
-                    function setupp() {
-                        console.log("setup");
-                        $scope.formData = {"rooms":[{"adults":[{"age":null,"name":null},{"age":null,"name":null}],"children":[],"childrenCount":"0","$$hashKey":"object:520"}],"toDestination":"316","fromDate":"2015-07-26T07:00:00.000Z","toDate":"2015-07-09T07:00:00.000Z"};
-            
-                    }
-                    
-                    setTimeout(function() { console.log("setupp"); setupp(); }, 1000);
-        }]);
+  angular.module('sample', ['datePicker', 'ui.bootstrap']);
+
   </script> 
 </body>
 </html>

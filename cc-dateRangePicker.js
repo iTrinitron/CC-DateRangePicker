@@ -764,7 +764,7 @@ Module.directive('datePickerApp', ['$timeout','$window', function($timeout, $win
         $scope.endPlaceholderText = ($scope.endPlaceholderText || "");
         //Calculate necessary dimensions to figure out if we are mobile/desktop view
         $scope.window = angular.element($window);
-        $scope.windowMode = getWindowMode();
+        //$scope.windowMode = getWindowMode(); NEED evo$ defined
         
         //CONTROLLER Variables utilized by child directives
 
@@ -792,7 +792,7 @@ Module.directive('datePickerApp', ['$timeout','$window', function($timeout, $win
             return str.replace(/(^\s*,)|(,\s*$)/g, '');
         }
         
-        
+        /*
         function getWindowMode() {
             var mode = "";
             if(evo$('body').hasClass('mode-xs')) {mode = 'mode-xs';}
@@ -821,7 +821,7 @@ Module.directive('datePickerApp', ['$timeout','$window', function($timeout, $win
                     }
                 }
         });
-        evo$('body').trigger("resize");
+        evo$('body').trigger("resize"); */
         
         var maxEndDates = new Array();
         
