@@ -5,7 +5,6 @@ Extension of [g00fy's Angular Datepicker](https://github.com/g00fy-/angular-date
 - Angular v1.3.13+
 - UI Bootstrap v0.13.0+
 - Moment JS v2.10.3+
-- ~~Font Awesome
 - Bootstrap v3.3.5+
 
 ##Getting Started
@@ -101,7 +100,7 @@ Default: ``
 
 Maximum end Date
 
-#### ~~max-end-date-offset
+~~#### max-end-date-offset
 Type: `Integer`  
 Default: ``
 
